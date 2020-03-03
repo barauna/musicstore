@@ -93,4 +93,8 @@ public class Banco {
 		return null;
 	}
 
+	public static List<Artist> getAllArtists() {
+		return artists;
+	}
+
 }

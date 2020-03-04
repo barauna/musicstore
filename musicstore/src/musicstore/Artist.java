@@ -9,13 +9,21 @@ public class Artist {
 	int yearFormation;
 	String biography;
 
-	ArrayList<Player> musicians;
-	ArrayList<Album> albums;
+	ArrayList<Player> musicians = new ArrayList<Player>();
+	ArrayList<Album> albums = new ArrayList<Album>();
 
 	public Artist(String name, String genre, int year) {
 		this.name = name;
 		this.genre = genre;
 		this.yearFormation = year;
+	}
+
+	public String getGenre() {
+		return genre;
+	}
+
+	public int getYearFormation() {
+		return yearFormation;
 	}
 
 	public String getBiography() {

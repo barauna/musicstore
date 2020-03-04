@@ -4,13 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Banco {
-	private static List<Artist> artists = new ArrayList<Artist>();
+	private static List<Artist> artists;
 
 	static {
-
+		artists = new ArrayList<Artist>();
 		addBeatles();
 		addPinkFloyd();
-
 	}
 
 	private static void addBeatles() {

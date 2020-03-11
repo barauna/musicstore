@@ -70,4 +70,12 @@ public class Artist {
 		return name;
 	}
 
+	public void setYearFormation(int year) {
+		this.yearFormation = year;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+
 }

@@ -84,7 +84,7 @@ public class Banco {
 
 	public static Artist getArtist(String name) {
 		for (Artist artist : artists) {
-			if (artist.getName() == name) {
+			if (artist.getName().equals(name)) {
 				return artist;
 			}
 		}

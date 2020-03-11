@@ -13,14 +13,20 @@
 			<th>Artist</th>
 			<th>Genre</th>
 			<th>Formation</th>
+			<th>Edit</th>
+			<th>Delete</th>
 		</tr>
 		<c:forEach items="${artists}" var="artist">
 			<tr>
 				<td>${artist.name}</td>
 				<td>${artist.genre}</td>
 				<td>${artist.yearFormation}</td>
+				<td><a href="ArtistServlet?action=update_&artist=${artist.name}"><img src="img/edit.png" width="30" height="20" /></a></td>
+				<td><a href="ArtistServlet?action=delete&artist=${artist.name}"><img src="img/delete.png" width="18" height="18" /></a></td>
 			</tr> 
 		</c:forEach>
 	</table>
+	<br>
+	<a href="ArtistServlet?action=new_"><button>Novo</button></a>
 </body>
 </html>
